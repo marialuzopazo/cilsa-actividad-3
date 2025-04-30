@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales - Validado - opazo mluz</title>
+    <link rel="stylesheet" href="estilos_validado.css"> </head>
+    <link rel="stylesheet" href="estilos_validado.css"> </head>
+    <link rel="stylesheet" href="estilos_oscuro_v.css"> </head>
+<body>
+    <div class="formulario-contenedor-v">
+        <h1>Formulario de Datos Personales</h1>
+        <form action="#" method="post">
+            <div class="campo-v">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"> </div>
+
+            <div class="campo-v">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"> </div>
+
+            <div class="campo-v">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> </div>
+
+            <div class="campo-v">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"> </div>
+
+            <div class="campo-v">
+                <label for="pais">País de Residencia:</label>
+                <select id="pais" name="pais">
+                    <option value="">Seleccione un país</option>
+                    <option value="ar">Argentina</option>
+                    <option value="bo">Bolivia</option>
+                    <option value="br">Brasil</option>
+                    <option value="cl">Chile</option>
+                    <option value="co">Colombia</option>
+                    <option value="ec">Ecuador</option>
+                    <option value="py">Paraguay</option>
+                    <option value="pe">Perú</option>
+                    <option value="uy">Uruguay</option>
+                    <option value="ve">Venezuela</option>
+                </select>
+            </div>
+
+            <div class="botones-v">
+                <button type="submit">Enviar</button>
+                <button type="button" onclick="document.getElementById('estilos-v').setAttribute('href', 'estilos_claro_v.css')">Estilo Claro</button>
+                <button type="button" onclick="document.getElementById('estilos-v').setAttribute('href', 'estilos_oscuro_v.css')">Estilo Oscuro</button>
+            </div>
+        </form>
+    </div>
+
+    <link id="estilos-v" rel="stylesheet" href="estilos_validado.css">
+</body>
+</html>
